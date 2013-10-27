@@ -1,6 +1,8 @@
 package com.github.abrarsyed.gmcp.source;
 
 import com.github.abrarsyed.gmcp.Constants;
+import com.google.code.regexp.Matcher;
+import com.google.code.regexp.Pattern;
 import com.google.common.base.Joiner;
 import com.google.common.base.Strings;
 
@@ -8,8 +10,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class FFPatcher
 {

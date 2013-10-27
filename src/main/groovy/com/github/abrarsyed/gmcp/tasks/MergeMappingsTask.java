@@ -2,6 +2,7 @@ package com.github.abrarsyed.gmcp.tasks;
 
 import au.com.bytecode.opencsv.CSVParser;
 import au.com.bytecode.opencsv.CSVReader;
+
 import com.github.abrarsyed.gmcp.Constants;
 import com.github.abrarsyed.gmcp.GMCP;
 import com.google.common.base.Joiner;
@@ -9,8 +10,10 @@ import com.google.common.base.Strings;
 import com.google.common.collect.ObjectArrays;
 import com.google.common.io.Files;
 import com.google.common.io.LineProcessor;
+
 import lombok.Getter;
 import lombok.Setter;
+
 import org.gradle.api.tasks.InputFile;
 import org.gradle.api.tasks.OutputFile;
 import org.gradle.api.tasks.TaskAction;
@@ -23,7 +26,8 @@ import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
-import java.util.regex.Matcher;
+
+import com.google.code.regexp.Matcher;
 import com.google.code.regexp.Pattern;
 
 public class MergeMappingsTask extends CachedTask
